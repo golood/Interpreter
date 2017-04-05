@@ -1,0 +1,35 @@
+%kvadratnoe yravnenie%
+
+main()
+    double a;
+    double b;
+    double c;
+    double d;
+    double x;
+    double xx;
+    
+    write("solve a quadratic equation");
+    write("ax^2 + bx + c = 0");
+    write("enter a");
+    read(a);
+    write("enter b");
+    read(b);
+    write("enter c");
+    read(c);
+
+    d = (b*b) - (4.0 * a * c);
+
+    if(d > 0.0){
+        x = (-b - sqrt(d)) / (2.0 * a);
+        xx = (-b + sqrt(d)) / (2.0 * a);
+        write("roots the equation:");
+        write("x1 = ", x);
+        write("x2 =  ", xx);
+    }else{
+        if(d == 0.0){
+            x = -b / (2.0 * a);
+            write("root the equation: x = ", x);
+        }else{
+            write("no real roots");
+        }}
+end

@@ -1,0 +1,6 @@
+main()
+int d;
+double a= -18.0;
+d = 2.0*5.0;
+write(d);
+ende
